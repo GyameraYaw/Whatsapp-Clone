@@ -1,6 +1,6 @@
 # 📱 WhatsApp Clone – Web Version
 
-A lightweight clone of WhatsApp's UI built using **HTML**, **CSS (with Tailwind)**, **JavaScript**, and **PHP** for session management. This project aims to replicate WhatsApp's look and feel while implementing core UI and basic functionality.
+A lightweight clone of WhatsApp's UI built using **HTML**, **CSS**, **JavaScript**, and **PHP** for session management. This project aims to replicate WhatsApp's look and feel while implementing core UI and basic functionality.
 
 ---
 
