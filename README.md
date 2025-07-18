@@ -6,13 +6,12 @@ A lightweight clone of WhatsApp's UI built using **HTML**, **CSS (with Tailwind)
 
 ## 🚀 Features (Implemented)
 
-- ✅ **Login/Signup Pages** (UI only)
-- ✅ **Dashboard Page**
-  - Sidebar with links: Dashboard, Members, Billing
-  - Top navigation bar
+- ✅ **Login/Signup Pages** 
+- ✅ **Home Page**
+  - Sidebar with links: Settings
 - ✅ **Settings Overlay**
   - Logout button
-- ✅ **Responsive Layout** using Tailwind CSS
+- ✅ **Responsive Layout**
 - ✅ **JavaScript-based Routing & Overlay Management**
 - ✅ **Basic Session Check in PHP** (currently commented out for development)
 - ✅ **Implemented chat layout and dummy messages**
@@ -48,7 +47,6 @@ A lightweight clone of WhatsApp's UI built using **HTML**, **CSS (with Tailwind)
 ## 🔐 Known Issues / In Development
 
 - [ ] Session-based access control is **commented out** in `settings.php` to allow overlay loading via `fetch()`.
-- [ ] No actual login/signup authentication yet (forms only).
 - [ ] Settings overlay currently loads HTML fragment directly; needs AJAX-safe session protection.
 - [ ] No backend chat or messaging logic implemented yet.
 - [ ] Responsive tweaks for mobile not fully polished.
