@@ -1,0 +1,328 @@
+/* Status page specific styles */
+.status-list {
+    width: 350px;
+    background: #1e1e1e;
+    border-right: 1px solid #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.status-header {
+    padding: 20px 24px 16px;
+    background: #1e1e1e;
+    border-bottom: 1px solid #2f2f2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-header h2 {
+    color: #e1e1e1;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.status-actions {
+    color: #8696a0;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.status-actions:hover {
+    background: #2a2f32;
+    color: #e1e1e1;
+}
+
+.status-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 0;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    position: relative;
+}
+
+.status-item:hover {
+    background: #2a2f32;
+}
+
+.status-item.whatsapp-status {
+    border-bottom: 1px solid #2f2f2f;
+    margin-bottom: 8px;
+}
+
+.status-avatar {
+    position: relative;
+    margin-right: 12px;
+}
+
+.status-avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-placeholder {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.whatsapp-icon {
+    width: 48px;
+    height: 48px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.verified-badge {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 16px;
+    height: 16px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1e1e1e;
+}
+
+.verified-badge svg {
+    width: 10px;
+    height: 10px;
+    color: white;
+}
+
+.status-ring {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #25d366;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.status-ring.viewed {
+    border-color: #8696a0;
+    opacity: 0.5;
+}
+
+.status-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.status-name {
+    color: #e1e1e1;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.verified {
+    color: #25d366;
+    font-size: 14px;
+}
+
+.status-time {
+    color: #8696a0;
+    font-size: 13px;
+}
+
+/* Main Status Area */
+.main-status {
+    flex: 1;
+    background: #0b141a;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.status-view-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.status-view-header {
+    padding: 24px 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2f2f2f;
+    margin-bottom: 24px;
+}
+
+.status-view-header h2 {
+    color: #e1e1e1;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.status-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.status-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: #8696a0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.status-btn:hover {
+    background: #2a2f32;
+    color: #e1e1e1;
+}
+
+.my-status-section {
+    margin-bottom: 40px;
+}
+
+.my-status-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.my-status-avatar {
+    position: relative;
+}
+
+.my-status-avatar .avatar-placeholder {
+    width: 64px;
+    height: 64px;
+    background: #075e54 !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-status-info {
+    flex: 1;
+}
+
+.my-status-title {
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.my-status-subtitle {
+    color: #8696a0;
+    font-size: 14px;
+}
+
+.status-privacy-notice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #8696a0;
+    font-size: 13px;
+    padding: 16px;
+    background: rgba(37, 211, 102, 0.1);
+    border-radius: 8px;
+    margin-top: auto;
+    margin-bottom: 24px;
+}
+
+.privacy-icon {
+    color: #25d366;
+    flex-shrink: 0;
+}
+
+.encrypted {
+    color: #25d366;
+    font-weight: 500;
+}
+
+/* Scrollbar styling for status list */
+.status-items::-webkit-scrollbar {
+    width: 6px;
+}
+
+.status-items::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.status-items::-webkit-scrollbar-thumb {
+    background: #8696a0;
+    border-radius: 3px;
+}
+
+.status-items::-webkit-scrollbar-thumb:hover {
+    background: #e1e1e1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .status-list {
+        width: 300px;
+    }
+    
+    .status-view-area {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .status-list {
+        width: 280px;
+    }
+    
+    .status-header {
+        padding: 16px 20px 12px;
+    }
+    
+    .status-item {
+        padding: 10px 20px;
+    }
+    
+    .status-view-area {
+        padding: 0 16px;
+    }
+}
